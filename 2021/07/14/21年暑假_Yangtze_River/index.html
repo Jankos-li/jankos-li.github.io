@@ -6,20 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://lighthy.com">
-  <title>多线程概念 | jankos-li博客</title>
+  <title>1 | jankos-li博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="&#x2F;* ***** 多线程的一些概念？（了解） ***** 程序： *****   当你要完成某个**&#x2F;**写任务时，功能时，选择一种编程语言而编写的一组指令的集合。">
+  <meta name="description" content="​    作为一个第一次看到长江的孩子，内心还是非常开心的，毕竟从小到大都是只在书本和电视上看过长江。可惜的是，水太浑浊了，让在公交车上的我，下意识地问我云姐,">
 <meta property="og:type" content="article">
-<meta property="og:title" content="多线程概念">
-<meta property="og:url" content="http://lighthy.com/2021/06/03/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%A6%82%E5%BF%B5/index.html">
+<meta property="og:title" content="1">
+<meta property="og:url" content="http://lighthy.com/2021/07/14/21%E5%B9%B4%E6%9A%91%E5%81%87_Yangtze_River/index.html">
 <meta property="og:site_name" content="jankos-li博客">
-<meta property="og:description" content="&#x2F;* ***** 多线程的一些概念？（了解） ***** 程序： *****   当你要完成某个**&#x2F;**写任务时，功能时，选择一种编程语言而编写的一组指令的集合。">
+<meta property="og:description" content="​    作为一个第一次看到长江的孩子，内心还是非常开心的，毕竟从小到大都是只在书本和电视上看过长江。可惜的是，水太浑浊了，让在公交车上的我，下意识地问我云姐,">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-06-03T03:41:30.000Z">
-<meta property="article:modified_time" content="2021-06-03T15:11:00.614Z">
+<meta property="og:image" content="http://lighthy.com/.com//Blog/source_posts/1/074CD8A38A9D979AA69F29B2FB0F2BA7.png">
+<meta property="og:image" content="http://lighthy.com/.com//Blog/source_posts/1/BEA2EF78E81444D2CE9A7FCA61E0F242.png">
+<meta property="article:published_time" content="2021-07-14T08:11:23.000Z">
+<meta property="article:modified_time" content="2021-07-14T08:31:38.728Z">
 <meta property="article:author" content="jankos">
-<meta property="article:tag" content="多线程">
+<meta property="article:tag" content="心情日记">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://lighthy.com/.com//Blog/source_posts/1/074CD8A38A9D979AA69F29B2FB0F2BA7.png">
   
     <link rel="alternative" href="/atom.xml" title="jankos-li博客" type="application/atom+xml">
   
@@ -187,56 +190,31 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-多线程概念" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-21年暑假_Yangtze_River" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      多线程概念
+      1
     </h1>
   
 
         
-        <a href="/2021/06/03/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%A6%82%E5%BF%B5/" class="archive-article-date">
-  	<time datetime="2021-06-03T03:41:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-06-03</time>
+        <a href="/2021/07/14/21%E5%B9%B4%E6%9A%91%E5%81%87_Yangtze_River/" class="archive-article-date">
+  	<time datetime="2021-07-14T08:11:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-14</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><strong>/*</strong></p>
-<p>***** <strong>多线程的一些概念？（了解）</strong></p>
-<p>***** <strong>程序：</strong></p>
-<p>*****   <strong>当你要完成某个</strong>**/**<strong>写任务时，功能时，选择一种编程语言而编写的一组指令的集合。</strong><span id="more"></span></p>
-<p>***** <strong>软件：</strong></p>
-<p>*****   <strong>软件</strong>**=<strong><strong>程序</strong></strong>+**<strong>程序运行所需要的一些资源文件。</strong></p>
-<p>*****   <strong>一个软件中可能会由很多个程序构成。</strong></p>
-<p>***** <strong>进程：</strong></p>
-<p>*****   <strong>程序的一次运行。</strong></p>
-<p>*****   <strong>每个进程之间是独立的，操作系统在分配资源（内存）时，以进程为单位。</strong></p>
-<p>*****   <strong>两个进程之间进行切换，通信（交换数据）等操作时，成本比较高。</strong></p>
-<p>***** <strong>线程：</strong></p>
-<p>*****   <strong>进程中的一条执行路径。</strong></p>
-<p>*****   <strong>同一个进程中的线程之间是可以共享部分内存（方法区，堆），每个线程的有些内存又是独立（虚拟机栈、本地方法栈、程序计数器）的。</strong></p>
-<p>*****   <strong>因为线程之间可能使用共享内存，那么在数据交换成本上就比较低，而且线程之间的切换，对于<strong><strong>CPU</strong></strong>和操作系统来说，成本比较低。</strong></p>
-<p>*****   <strong>所以我们通过用多线程来代替多进程的方式，实现多任务开发。</strong></p>
-<p>***** <strong>并行：</strong></p>
-<p>*****   <strong>多个线程同时运行。</strong></p>
-<p>*****   <strong>并行，要求同时进行，针对的是<strong><strong>CPU</strong></strong>多核，甚至多个<strong><strong>CPU</strong></strong>，同时运行多个线程任务。</strong></p>
-<p>***** <strong>并发：</strong></p>
-<p>*****   <strong>多个进程同时运行。</strong></p>
-<p>*****   <strong>高并发，多个任务处理功能，但是不要求同时进行。</strong></p>
+        <p>​    作为一个第一次看到长江的孩子，内心还是非常开心的，毕竟从小到大都是只在书本和电视上看过长江。可惜的是，水太浑浊了，让在公交车上的我，下意识地问我云姐,<span id="more"></span>这个是黄河吗？哈哈哈哈，当时场面时十分尴尬，信号公交车上人不是很多。</p>
+<p>​    吹吹晚风，还是非常惬意的，唯一遗憾的一点就是出门的时候，没有穿我的大拖鞋过来。因为夏季降水比较多的原因，有的围挡台阶里面已经有水漫了上来，很多小朋友直接都在那里戏水。所以，下次再去的话，我一定要穿上我的大拖鞋！！！</p>
 <hr>
-<hr>
-<hr>
-<p>*** CPU<strong><strong>：一个</strong></strong>CPU**<strong>同一个时间只能够运行一个线程的任务。</strong></p>
-<p>***** <strong>如何实现多个线程并发（同时运行）？</strong></p>
-<p>*****   <strong>是因为<strong><strong>CPU</strong></strong>是非常快的，这个速度远远高于内存、硬盘、人的大脑反应的速度。</strong></p>
-<p>***** <strong>那么<strong><strong>CPU</strong></strong>会在多个线程之间，快速的切换，人是感觉不到的。</strong></p>
-<p>*** */**</p>
+<p><img src="/.com//Blog\source_posts\1\074CD8A38A9D979AA69F29B2FB0F2BA7.png" alt="074CD8A38A9D979AA69F29B2FB0F2BA7"></p>
+<p><img src="/.com//Blog\source_posts\1\BEA2EF78E81444D2CE9A7FCA61E0F242.png" alt="BEA2EF78E81444D2CE9A7FCA61E0F242"></p>
 
       
 
@@ -281,7 +259,7 @@ var _hmt = _hmt || [];
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">多线程</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">心情日记</a>
         		</li>
       		
 		</ul>
@@ -337,7 +315,7 @@ var _hmt = _hmt || [];
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://lighthy.com/2021/06/03/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%A6%82%E5%BF%B5/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://lighthy.com/2021/07/14/21%E5%B9%B4%E6%9A%91%E5%81%87_Yangtze_River/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -351,15 +329,11 @@ var _hmt = _hmt || [];
   
 <nav id="article-nav">
   
-    <a href="/2021/06/03/%E7%8C%9D%E4%B8%8D%E5%8F%8A%E9%98%B2/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          猝不及防
-        
-      </div>
-    </a>
   
+    <a href="/2021/06/22/%E5%85%B3%E4%BA%8EServlet/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">关于javaweb的servlet</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
@@ -387,7 +361,7 @@ var _hmt = _hmt || [];
   
 
   
-  <div id="SOHUCS" sid="多线程概念" ></div> 
+  <div id="SOHUCS" sid="21年暑假_Yangtze_River" ></div> 
 <script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
 <script type="text/javascript">
     window.changyan.api.config({

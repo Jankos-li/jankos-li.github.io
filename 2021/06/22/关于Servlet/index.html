@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://lighthy.com">
-  <title>多线程概念 | jankos-li博客</title>
+  <title>关于javaweb的servlet | jankos-li博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="&#x2F;* ***** 多线程的一些概念？（了解） ***** 程序： *****   当你要完成某个**&#x2F;**写任务时，功能时，选择一种编程语言而编写的一组指令的集合。">
+  <meta name="description" content="Servlet的一些知识点​    Servlet是用来从html中获取用户输入的数据的，比如姓名和年龄等，然后可以让数据库读取到其中的内容。简而言之就是用来连接数据库和前端的。 狭义上的Servlet：实现了Javax.servlet.Servlet接口及其子接口 广义上的Servlet：实现了Servlet接口的实现类  Servlet的生命周期： ​    首先创建Servlet的实现类，并">
 <meta property="og:type" content="article">
-<meta property="og:title" content="多线程概念">
-<meta property="og:url" content="http://lighthy.com/2021/06/03/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%A6%82%E5%BF%B5/index.html">
+<meta property="og:title" content="关于javaweb的servlet">
+<meta property="og:url" content="http://lighthy.com/2021/06/22/%E5%85%B3%E4%BA%8EServlet/index.html">
 <meta property="og:site_name" content="jankos-li博客">
-<meta property="og:description" content="&#x2F;* ***** 多线程的一些概念？（了解） ***** 程序： *****   当你要完成某个**&#x2F;**写任务时，功能时，选择一种编程语言而编写的一组指令的集合。">
+<meta property="og:description" content="Servlet的一些知识点​    Servlet是用来从html中获取用户输入的数据的，比如姓名和年龄等，然后可以让数据库读取到其中的内容。简而言之就是用来连接数据库和前端的。 狭义上的Servlet：实现了Javax.servlet.Servlet接口及其子接口 广义上的Servlet：实现了Servlet接口的实现类  Servlet的生命周期： ​    首先创建Servlet的实现类，并">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-06-03T03:41:30.000Z">
-<meta property="article:modified_time" content="2021-06-03T15:11:00.614Z">
+<meta property="article:published_time" content="2021-06-22T13:21:45.000Z">
+<meta property="article:modified_time" content="2021-07-14T08:13:01.579Z">
 <meta property="article:author" content="jankos">
-<meta property="article:tag" content="多线程">
+<meta property="article:tag" content="javaweb">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="jankos-li博客" type="application/atom+xml">
@@ -187,56 +187,46 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-多线程概念" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-关于Servlet" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      多线程概念
+      关于javaweb的servlet
     </h1>
   
 
         
-        <a href="/2021/06/03/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%A6%82%E5%BF%B5/" class="archive-article-date">
-  	<time datetime="2021-06-03T03:41:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-06-03</time>
+        <a href="/2021/06/22/%E5%85%B3%E4%BA%8EServlet/" class="archive-article-date">
+  	<time datetime="2021-06-22T13:21:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-06-22</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><strong>/*</strong></p>
-<p>***** <strong>多线程的一些概念？（了解）</strong></p>
-<p>***** <strong>程序：</strong></p>
-<p>*****   <strong>当你要完成某个</strong>**/**<strong>写任务时，功能时，选择一种编程语言而编写的一组指令的集合。</strong><span id="more"></span></p>
-<p>***** <strong>软件：</strong></p>
-<p>*****   <strong>软件</strong>**=<strong><strong>程序</strong></strong>+**<strong>程序运行所需要的一些资源文件。</strong></p>
-<p>*****   <strong>一个软件中可能会由很多个程序构成。</strong></p>
-<p>***** <strong>进程：</strong></p>
-<p>*****   <strong>程序的一次运行。</strong></p>
-<p>*****   <strong>每个进程之间是独立的，操作系统在分配资源（内存）时，以进程为单位。</strong></p>
-<p>*****   <strong>两个进程之间进行切换，通信（交换数据）等操作时，成本比较高。</strong></p>
-<p>***** <strong>线程：</strong></p>
-<p>*****   <strong>进程中的一条执行路径。</strong></p>
-<p>*****   <strong>同一个进程中的线程之间是可以共享部分内存（方法区，堆），每个线程的有些内存又是独立（虚拟机栈、本地方法栈、程序计数器）的。</strong></p>
-<p>*****   <strong>因为线程之间可能使用共享内存，那么在数据交换成本上就比较低，而且线程之间的切换，对于<strong><strong>CPU</strong></strong>和操作系统来说，成本比较低。</strong></p>
-<p>*****   <strong>所以我们通过用多线程来代替多进程的方式，实现多任务开发。</strong></p>
-<p>***** <strong>并行：</strong></p>
-<p>*****   <strong>多个线程同时运行。</strong></p>
-<p>*****   <strong>并行，要求同时进行，针对的是<strong><strong>CPU</strong></strong>多核，甚至多个<strong><strong>CPU</strong></strong>，同时运行多个线程任务。</strong></p>
-<p>***** <strong>并发：</strong></p>
-<p>*****   <strong>多个进程同时运行。</strong></p>
-<p>*****   <strong>高并发，多个任务处理功能，但是不要求同时进行。</strong></p>
+        <h3 id="Servlet的一些知识点"><a href="#Servlet的一些知识点" class="headerlink" title="Servlet的一些知识点"></a><center>Servlet的一些知识点</center></h3><p>​    Servlet是用来从html中获取用户输入的数据的，比如姓名和年龄等，然后可以让数据库读取到其中的内容。简而言之就是用来连接数据库和前端的。</p>
+<p>狭义上的Servlet：实现了Javax.servlet.Servlet接口及其子接口</p>
+<p>广义上的Servlet：实现了Servlet接口的实现类</p>
 <hr>
+<p>Servlet的生命周期：</p>
+<p>​    首先创建Servlet的实现类，并且对其进行初始化操作。srvice方法在每一次得到客户端的请求时都会执行，终止阶段，调用destroy方法去终止。</p>
+<p>最终创建Servlet的方式：继承HttpServlet类。</p>
+<p>​    HttpServlet类中，主要干了两件事</p>
+<ol>
+<li><p>有两个service方法，其中一个是重写了Servlet中的service方法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@override</span></span><br><span class="line">	<span class="keyword">public</span> </span><br><span class="line">	HttpServletRequst request = (HttpServletRequst)req;</span><br><span class="line">	HttpServletResponse response = (HttpServletResponse)res;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>主要是对req和res做了一个强转（向上转型）。</p>
+<p>2.重载的service方法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">String method = req.method()</span><br><span class="line">	<span class="keyword">if</span>(method.equals(GET))&#123;</span><br><span class="line">	 	doGet();</span><br><span class="line">	 &#125;<span class="keyword">else</span> <span class="keyword">if</span>(method.equals(POST))&#123;</span><br><span class="line">		doPost();</span><br><span class="line">	 &#125;</span><br></pre></td></tr></table></figure>
+
+<p>主要是判断它是用的Get还是Post。</p>
 <hr>
-<hr>
-<p>*** CPU<strong><strong>：一个</strong></strong>CPU**<strong>同一个时间只能够运行一个线程的任务。</strong></p>
-<p>***** <strong>如何实现多个线程并发（同时运行）？</strong></p>
-<p>*****   <strong>是因为<strong><strong>CPU</strong></strong>是非常快的，这个速度远远高于内存、硬盘、人的大脑反应的速度。</strong></p>
-<p>***** <strong>那么<strong><strong>CPU</strong></strong>会在多个线程之间，快速的切换，人是感觉不到的。</strong></p>
-<p>*** */**</p>
+</li>
+</ol>
 
       
 
@@ -281,7 +271,7 @@ var _hmt = _hmt || [];
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">多线程</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">javaweb</a>
         		</li>
       		
 		</ul>
@@ -337,7 +327,7 @@ var _hmt = _hmt || [];
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://lighthy.com/2021/06/03/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%A6%82%E5%BF%B5/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://lighthy.com/2021/06/22/%E5%85%B3%E4%BA%8EServlet/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -351,15 +341,20 @@ var _hmt = _hmt || [];
   
 <nav id="article-nav">
   
-    <a href="/2021/06/03/%E7%8C%9D%E4%B8%8D%E5%8F%8A%E9%98%B2/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2021/07/14/21%E5%B9%B4%E6%9A%91%E5%81%87_Yangtze_River/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          猝不及防
+          1
         
       </div>
     </a>
   
+  
+    <a href="/2021/06/04/%E5%85%B3%E4%BA%8E%E7%B1%BB%E7%9A%84%E5%88%9D%E5%A7%8B%E5%8C%96%E9%A1%BA%E5%BA%8F/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">关于类的初始化顺序</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
@@ -387,7 +382,7 @@ var _hmt = _hmt || [];
   
 
   
-  <div id="SOHUCS" sid="多线程概念" ></div> 
+  <div id="SOHUCS" sid="关于Servlet" ></div> 
 <script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
 <script type="text/javascript">
     window.changyan.api.config({

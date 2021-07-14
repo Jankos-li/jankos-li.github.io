@@ -72,13 +72,13 @@ var _hmt = _hmt || [];
 	        
 				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 	        
-				<li><a href="/">相册</a></li>
+				<li><a href="/photos/">相册</a></li>
 	        
 			</ul>
 		</nav>
 
 		<nav>
-    		总文章数 3
+    		总文章数 5
 		</nav>
 
 		<nav class="header-smart-menu">
@@ -170,7 +170,7 @@ var _hmt = _hmt || [];
 		        
 					<li style="width: 25%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 		        
-					<li style="width: 25%"><a href="/">相册</a></li>
+					<li style="width: 25%"><a href="/photos/">相册</a></li>
 		        
 				</ul>
 			</nav>
@@ -186,6 +186,173 @@ var _hmt = _hmt || [];
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-21年暑假_Yangtze_River" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/07/14/21%E5%B9%B4%E6%9A%91%E5%81%87_Yangtze_River/">1</a>
+    </h1>
+  
+
+        
+        <a href="/2021/07/14/21%E5%B9%B4%E6%9A%91%E5%81%87_Yangtze_River/" class="archive-article-date">
+  	<time datetime="2021-07-14T08:11:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-14</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>​    作为一个第一次看到长江的孩子，内心还是非常开心的，毕竟从小到大都是只在书本和电视上看过长江。可惜的是，水太浑浊了，让在公交车上的我，下意识地问我云姐,</p>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">心情日记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/07/14/21%E5%B9%B4%E6%9A%91%E5%81%87_Yangtze_River/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-关于Servlet" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/06/22/%E5%85%B3%E4%BA%8EServlet/">关于javaweb的servlet</a>
+    </h1>
+  
+
+        
+        <a href="/2021/06/22/%E5%85%B3%E4%BA%8EServlet/" class="archive-article-date">
+  	<time datetime="2021-06-22T13:21:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-06-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="Servlet的一些知识点"><a href="#Servlet的一些知识点" class="headerlink" title="Servlet的一些知识点"></a><center>Servlet的一些知识点</center></h3><p>​    Servlet是用来从html中获取用户输入的数据的，比如姓名和年龄等，然后可以让数据库读取到其中的内容。简而言之就是用来连接数据库和前端的。</p>
+<p>狭义上的Servlet：实现了Javax.servlet.Servlet接口及其子接口</p>
+<p>广义上的Servlet：实现了Servlet接口的实现类</p>
+<hr>
+<p>Servlet的生命周期：</p>
+<p>​    首先创建Servlet的实现类，并且对其进行初始化操作。srvice方法在每一次得到客户端的请求时都会执行，终止阶段，调用destroy方法去终止。</p>
+<p>最终创建Servlet的方式：继承HttpServlet类。</p>
+<p>​    HttpServlet类中，主要干了两件事</p>
+<ol>
+<li><p>有两个service方法，其中一个是重写了Servlet中的service方法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@override</span></span><br><span class="line">	<span class="keyword">public</span> </span><br><span class="line">	HttpServletRequst request = (HttpServletRequst)req;</span><br><span class="line">	HttpServletResponse response = (HttpServletResponse)res;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>主要是对req和res做了一个强转（向上转型）。</p>
+<p>2.重载的service方法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">String method = req.method()</span><br><span class="line">	<span class="keyword">if</span>(method.equals(GET))&#123;</span><br><span class="line">	 	doGet();</span><br><span class="line">	 &#125;<span class="keyword">else</span> <span class="keyword">if</span>(method.equals(POST))&#123;</span><br><span class="line">		doPost();</span><br><span class="line">	 &#125;</span><br></pre></td></tr></table></figure>
+
+<p>主要是判断它是用的Get还是Post。</p>
+<hr>
+</li>
+</ol>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">javaweb</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/06/22/%E5%85%B3%E4%BA%8EServlet/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-关于类的初始化顺序" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -208,7 +375,7 @@ var _hmt = _hmt || [];
     <div class="article-entry" itemprop="articleBody">
       
         <p>这个例题是我在《Thinking in Java》上面digest的。</p>
-<p>1、在类的内部，变量定义的先后顺序决定了初始化的顺序。即使
+<p>1、在类的内部，变量定义的先后顺序决定了初始化的顺序。即使</p>
         
       
 
@@ -286,7 +453,7 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>生活并没有因为这两年遭受的打击而善待我，感觉很多事情都来不及，很多事情都只差一点点就能得到圆满，能得到我想要的结果。可是最后差的也就是这一点点。
+        <p>生活并没有因为这两年遭受的打击而善待我，感觉很多事情都来不及，很多事情都只差一点点就能得到圆满，能得到我想要的结果。可是最后差的也就是这一点点。</p>
         
       
 
@@ -363,7 +530,7 @@ var _hmt = _hmt || [];
         <p><strong>/*</strong></p>
 <p>***** <strong>多线程的一些概念？（了解）</strong></p>
 <p>***** <strong>程序：</strong></p>
-<p>*****   <strong>当你要完成某个</strong>**/**<strong>写任务时，功能时，选择一种编程语言而编写的一组指令的集合。</strong>
+<p>*****   <strong>当你要完成某个</strong>**/**<strong>写任务时，功能时，选择一种编程语言而编写的一组指令的集合。</strong></p>
         
       
 
@@ -508,11 +675,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">Java</a>
+                <a href="javascript:void(0)" class="js-tag color5">心情日记</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+                <a href="javascript:void(0)" class="js-tag color3">javaweb</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -520,7 +687,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">心情日记</a>
+                <a href="javascript:void(0)" class="js-tag color5">Java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
             
             <div class="clearfix"></div>

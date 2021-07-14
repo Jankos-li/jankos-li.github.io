@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://lighthy.com">
-  <title>多线程概念 | jankos-li博客</title>
+  <title>相册 | jankos-li博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="&#x2F;* ***** 多线程的一些概念？（了解） ***** 程序： *****   当你要完成某个**&#x2F;**写任务时，功能时，选择一种编程语言而编写的一组指令的集合。">
-<meta property="og:type" content="article">
-<meta property="og:title" content="多线程概念">
-<meta property="og:url" content="http://lighthy.com/2021/06/03/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%A6%82%E5%BF%B5/index.html">
+  <meta name="description" content="Photos 	待续   	图片正在加载中…     (function() {     var loadScript &#x3D; function(path) {       var $script &#x3D; document.createElement(&#39;script&#39;)       document.getElementsByTagName(&#39;body&#39;)[0].appendChild($scrip">
+<meta property="og:type" content="website">
+<meta property="og:title" content="相册">
+<meta property="og:url" content="http://lighthy.com/photos/index.html">
 <meta property="og:site_name" content="jankos-li博客">
-<meta property="og:description" content="&#x2F;* ***** 多线程的一些概念？（了解） ***** 程序： *****   当你要完成某个**&#x2F;**写任务时，功能时，选择一种编程语言而编写的一组指令的集合。">
+<meta property="og:description" content="Photos 	待续   	图片正在加载中…     (function() {     var loadScript &#x3D; function(path) {       var $script &#x3D; document.createElement(&#39;script&#39;)       document.getElementsByTagName(&#39;body&#39;)[0].appendChild($scrip">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-06-03T03:41:30.000Z">
-<meta property="article:modified_time" content="2021-06-03T15:11:00.614Z">
+<meta property="article:published_time" content="2021-06-06T02:13:13.392Z">
+<meta property="article:modified_time" content="2021-06-06T02:13:13.392Z">
 <meta property="article:author" content="jankos">
-<meta property="article:tag" content="多线程">
+<meta property="article:tag" content="前端,js,jquery,javascript,html5,开发者,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="jankos-li博客" type="application/atom+xml">
@@ -187,57 +187,42 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-多线程概念" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-photos" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      多线程概念
+      相册
     </h1>
   
 
-        
-        <a href="/2021/06/03/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%A6%82%E5%BF%B5/" class="archive-article-date">
-  	<time datetime="2021-06-03T03:41:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-06-03</time>
-</a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><strong>/*</strong></p>
-<p>***** <strong>多线程的一些概念？（了解）</strong></p>
-<p>***** <strong>程序：</strong></p>
-<p>*****   <strong>当你要完成某个</strong>**/**<strong>写任务时，功能时，选择一种编程语言而编写的一组指令的集合。</strong><span id="more"></span></p>
-<p>***** <strong>软件：</strong></p>
-<p>*****   <strong>软件</strong>**=<strong><strong>程序</strong></strong>+**<strong>程序运行所需要的一些资源文件。</strong></p>
-<p>*****   <strong>一个软件中可能会由很多个程序构成。</strong></p>
-<p>***** <strong>进程：</strong></p>
-<p>*****   <strong>程序的一次运行。</strong></p>
-<p>*****   <strong>每个进程之间是独立的，操作系统在分配资源（内存）时，以进程为单位。</strong></p>
-<p>*****   <strong>两个进程之间进行切换，通信（交换数据）等操作时，成本比较高。</strong></p>
-<p>***** <strong>线程：</strong></p>
-<p>*****   <strong>进程中的一条执行路径。</strong></p>
-<p>*****   <strong>同一个进程中的线程之间是可以共享部分内存（方法区，堆），每个线程的有些内存又是独立（虚拟机栈、本地方法栈、程序计数器）的。</strong></p>
-<p>*****   <strong>因为线程之间可能使用共享内存，那么在数据交换成本上就比较低，而且线程之间的切换，对于<strong><strong>CPU</strong></strong>和操作系统来说，成本比较低。</strong></p>
-<p>*****   <strong>所以我们通过用多线程来代替多进程的方式，实现多任务开发。</strong></p>
-<p>***** <strong>并行：</strong></p>
-<p>*****   <strong>多个线程同时运行。</strong></p>
-<p>*****   <strong>并行，要求同时进行，针对的是<strong><strong>CPU</strong></strong>多核，甚至多个<strong><strong>CPU</strong></strong>，同时运行多个线程任务。</strong></p>
-<p>***** <strong>并发：</strong></p>
-<p>*****   <strong>多个进程同时运行。</strong></p>
-<p>*****   <strong>高并发，多个任务处理功能，但是不要求同时进行。</strong></p>
-<hr>
-<hr>
-<hr>
-<p>*** CPU<strong><strong>：一个</strong></strong>CPU**<strong>同一个时间只能够运行一个线程的任务。</strong></p>
-<p>***** <strong>如何实现多个线程并发（同时运行）？</strong></p>
-<p>*****   <strong>是因为<strong><strong>CPU</strong></strong>是非常快的，这个速度远远高于内存、硬盘、人的大脑反应的速度。</strong></p>
-<p>***** <strong>那么<strong><strong>CPU</strong></strong>会在多个线程之间，快速的切换，人是感觉不到的。</strong></p>
-<p>*** */**</p>
-
+        <link rel="stylesheet" href="./ins.css">
+<div class="photos-btn-wrap">
+	<a class="photos-btn active" href="javascript:void(0)">Photos</a>
+	<a class="photos-btn" href="#">待续</a>
+</div>
+<div class="instagram itemscope">
+	<a href="http://lighthy.com/" target="_blank" class="open-ins">图片正在加载中…</a>
+</div>
+<script>
+  (function() {
+    var loadScript = function(path) {
+      var $script = document.createElement('script')
+      document.getElementsByTagName('body')[0].appendChild($script)
+      $script.setAttribute('src', path)
+    }
+    setTimeout(function() {
+      loadScript('./ins.js')
+    }, 0)
+  })()
+</script>
       
 
       
@@ -276,17 +261,6 @@ var _hmt = _hmt || [];
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">多线程</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 
       
@@ -337,7 +311,7 @@ var _hmt = _hmt || [];
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://lighthy.com/2021/06/03/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%A6%82%E5%BF%B5/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://lighthy.com/photos/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -349,20 +323,6 @@ var _hmt = _hmt || [];
 </article>
 
   
-<nav id="article-nav">
-  
-    <a href="/2021/06/03/%E7%8C%9D%E4%B8%8D%E5%8F%8A%E9%98%B2/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          猝不及防
-        
-      </div>
-    </a>
-  
-  
-</nav>
-
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -381,26 +341,6 @@ var _hmt = _hmt || [];
 </aside>
 
 
-
-  
-  
-  
-
-  
-  <div id="SOHUCS" sid="多线程概念" ></div> 
-<script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
-<script type="text/javascript">
-    window.changyan.api.config({
-        appid: "cysX3aGWt",
-        conf: "prod_1dcda447175aada96edcdb7e412338fa"
-    });
-</script>
-</script>
-  
-
-  
-
-  
 
 
           </div>
@@ -425,7 +365,7 @@ var _hmt = _hmt || [];
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
